@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lancaster Technology and Development Corporation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <!-- Main Navigation Bar -->
+    <nav class="w-full bg-white shadow-sm">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <!-- Logo -->
+          <div class="flex shrink-0 items-center">
+            <a href="https://lancastertechdev.com">
+              <img
+                width="178"
+                height="43"
+                src="https://lancastertechdev.com/wp-content/uploads/2026/07/new_logo.png"
+                alt="Lancaster Technology and Development Corporation Logo"
+                class="h-10 w-auto"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Navigation Menu -->
+          <div class="hidden md:block">
+            <ul class="flex items-center space-x-6">
+              <li>
+                <a
+                  href="https://lancastertechdev.com"
+                  class="text-lg font-bold text-black transition hover:text-red-800"
+                  id="home-id-desktop"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://lancastertechdev.com/about-us"
+                  class="text-lg font-bold text-black transition hover:text-red-800"
+                  id="about-id-desktop"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://lancastertechdev.com/services"
+                  class="text-lg font-bold text-black transition hover:text-red-800"
+                  id="services-id-desktop"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://lancastertechdev.com/news"
+                  class="text-lg font-bold text-black transition hover:text-red-800"
+                  id="news-id-desktop"
+                >
+                  News &amp; Updates
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://lancastertechdev.com/contact-us"
+                  class="text-lg font-bold text-black transition hover:text-red-800"
+                  id="contact-id-desktop"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Trigger Icon -->
+          <div class="flex md:hidden">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center p-2 text-gray-700 hover:text-black focus:outline-none"
+              id="menu-toggle-mob"
+              aria-label="Open Mobile Menu"
+            >
+              <img
+                loading="lazy"
+                width="27"
+                height="7"
+                src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Header/align-left 1.png"
+                alt="Menu Toggle Icon"
+                class="h-auto w-7"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Modal Overlay Menu -->
+      <div
+        class="fixed inset-0 z-50 hidden bg-[#800000] p-6 text-white"
+        id="menu-modal"
+      >
+        <div class="mx-auto flex max-w-7xl items-center justify-between">
+          <!-- Mobile Modal Logo -->
+          <a href="https://lancastertechdev.com">
+            <img
+              loading="lazy"
+              src="https://lancastertechdev.com/wp-content/uploads/2026/07/new_logo_white.png"
+              alt="Lancaster Logo White"
+              class="h-10 w-auto"
+            />
+          </a>
+          <!-- Close Mobile Menu Button -->
+          <button
+            type="button"
+            class="p-2 text-white focus:outline-none"
+            id="close-btn-mob"
+            aria-label="Close Mobile Menu"
+          >
+            <img
+              loading="lazy"
+              width="20"
+              height="20"
+              src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Header/close (7) 1.png"
+              alt="Close Menu Icon"
+              class="h-5 w-5"
+            />
+          </button>
+        </div>
+
+        <!-- Mobile Navigation Links -->
+        <div class="mt-12">
+          <ul class="flex flex-col space-y-6">
+            <li>
+              <a
+                href="https://lancastertechdev.com"
+                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                id="home-id-mobile"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://lancastertechdev.com/about-us"
+                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                id="about-id-mobile"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://lancastertechdev.com/services"
+                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                id="services-id-mobile"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://lancastertechdev.com/news"
+                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                id="news-id-mobile"
+              >
+                News &amp; Updates
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://lancastertechdev.com/contact-us"
+                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                id="contact-id-mobile"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      id="main-content"
+      class="min-h-screen bg-gray-900 p-4 sm:p-8 lg:p-12 text-white"
+    >
+      <div class="mx-auto max-w-7xl">
+        <!-- Header Section -->
+        <div
+          class="mb-8 flex flex-col md:flex-row md:items-end justify-between border-b border-gray-800 pb-6 gap-4"
+        >
+          <div>
+            <span
+              class="text-xs font-bold tracking-widest text-red-500 uppercase"
+              >Dashboard</span
+            >
+            <h1
+              class="mt-1 text-3xl font-black tracking-tight sm:text-4xl text-white"
+            >
+              Quick Access Portals
+            </h1>
+          </div>
+          <p class="text-sm text-gray-400 max-w-md">
+            Select a portal to access university services, administrative
+            controls, and learning environments.
+          </p>
+        </div>
+
+        <!-- 2-Column Responsive Grid -->
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Card 1: Campus Portal (Primary / Featured) -->
+          <li>
+            <a
+              href="https://portal.rsu.edu.ph/"
+              class="group relative flex flex-col justify-end overflow-hidden rounded-3xl bg-gray-800 ring-1 ring-white/10 hover:ring-red-500/50 shadow-2xl transition-all duration-300 hover:-translate-y-1 h-72 sm:h-80 lg:h-96"
+            >
+              <!-- Background Image & Overlay -->
+              <img
+                src="assets/campus portal.jpg"
+                alt="Campus Portal"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+              ></div>
+
+              <!-- Top Badge -->
+              <div class="absolute top-6 left-6 flex items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-red-600/90 px-3 py-1 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-md"
+                >
+                  Featured
+                </span>
+              </div>
+
+              <!-- Bottom Card Content -->
+              <div
+                class="relative z-10 p-6 sm:p-8 flex items-end justify-between"
+              >
+                <div>
+                  <span
+                    class="text-xs font-semibold text-red-400 uppercase tracking-widest"
+                    >Main Dashboard</span
+                  >
+                  <h2
+                    class="text-2xl sm:text-3xl font-black text-white mt-1 group-hover:text-red-400 transition-colors"
+                  >
+                    Campus Portal
+                  </h2>
+                </div>
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white transition-all duration-300 group-hover:bg-red-600 group-hover:scale-110"
+                >
+                  <svg
+                    class="h-6 w-6 transition-transform duration-300 group-hover:translate-x-0.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Card 2: Campus Check -->
+          <li>
+            <a
+              href="https://campuscheck.rsu.edu.ph/"
+              class="group relative flex flex-col justify-end overflow-hidden rounded-3xl bg-gray-800 ring-1 ring-white/10 hover:ring-red-500/50 shadow-2xl transition-all duration-300 hover:-translate-y-1 h-72 sm:h-80 lg:h-96"
+            >
+              <img
+                src="assets/campus check.jpg"
+                alt="Campus Check"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute top-6 left-6 flex items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-black/50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-gray-200 backdrop-blur-md border border-white/10"
+                >
+                  System
+                </span>
+              </div>
+
+              <div
+                class="relative z-10 p-6 sm:p-8 flex items-end justify-between"
+              >
+                <div>
+                  <span
+                    class="text-xs font-semibold text-gray-400 uppercase tracking-widest"
+                    >Verification & Security</span
+                  >
+                  <h2
+                    class="text-2xl sm:text-3xl font-black text-white mt-1 group-hover:text-red-400 transition-colors"
+                  >
+                    Campus Check
+                  </h2>
+                </div>
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white transition-all duration-300 group-hover:bg-red-600 group-hover:scale-110"
+                >
+                  <svg
+                    class="h-6 w-6 transition-transform duration-300 group-hover:translate-x-0.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Card 3: HRIS -->
+          <li>
+            <a
+              href="https://hris.rsu.edu.ph/"
+              class="group relative flex flex-col justify-end overflow-hidden rounded-3xl bg-gray-800 ring-1 ring-white/10 hover:ring-red-500/50 shadow-2xl transition-all duration-300 hover:-translate-y-1 h-72 sm:h-80 lg:h-96"
+            >
+              <img
+                src="assets/HRIS.jpg"
+                alt="HRIS"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute top-6 left-6 flex items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-black/50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-gray-200 backdrop-blur-md border border-white/10"
+                >
+                  Internal
+                </span>
+              </div>
+
+              <div
+                class="relative z-10 p-6 sm:p-8 flex items-end justify-between"
+              >
+                <div>
+                  <span
+                    class="text-xs font-semibold text-gray-400 uppercase tracking-widest"
+                    >Human Resources</span
+                  >
+                  <h2
+                    class="text-2xl sm:text-3xl font-black text-white mt-1 group-hover:text-red-400 transition-colors"
+                  >
+                    HRIS
+                  </h2>
+                </div>
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white transition-all duration-300 group-hover:bg-red-600 group-hover:scale-110"
+                >
+                  <svg
+                    class="h-6 w-6 transition-transform duration-300 group-hover:translate-x-0.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <!-- Card 4: LMS -->
+          <li>
+            <a
+              href="https://faculty-lms.rsu.edu.ph/"
+              class="group relative flex flex-col justify-end overflow-hidden rounded-3xl bg-gray-800 ring-1 ring-white/10 hover:ring-red-500/50 shadow-2xl transition-all duration-300 hover:-translate-y-1 h-72 sm:h-80 lg:h-96"
+            >
+              <img
+                src="assets/LMS.jpg"
+                alt="LMS"
+                class="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
+              ></div>
+
+              <div class="absolute top-6 left-6 flex items-center gap-2">
+                <span
+                  class="inline-flex items-center rounded-full bg-black/50 px-3 py-1 text-xs font-bold uppercase tracking-wider text-gray-200 backdrop-blur-md border border-white/10"
+                >
+                  Learning
+                </span>
+              </div>
+
+              <div
+                class="relative z-10 p-6 sm:p-8 flex items-end justify-between"
+              >
+                <div>
+                  <span
+                    class="text-xs font-semibold text-gray-400 uppercase tracking-widest"
+                    >Academic Courses</span
+                  >
+                  <h2
+                    class="text-2xl sm:text-3xl font-black text-white mt-1 group-hover:text-red-400 transition-colors"
+                  >
+                    LMS
+                  </h2>
+                </div>
+                <div
+                  class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md text-white transition-all duration-300 group-hover:bg-red-600 group-hover:scale-110"
+                >
+                  <svg
+                    class="h-6 w-6 transition-transform duration-300 group-hover:translate-x-0.5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="bg-[#800000]">
+      <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-12">
+          <!-- Column 1: Contact Info -->
+          <div class="flex flex-col md:col-span-3">
+            <div class="mb-6 flex justify-center md:justify-start">
+              <img
+                loading="lazy"
+                width="313"
+                height="76"
+                src="https://lancastertechdev.com/wp-content/uploads/2026/07/new_logo_white.png"
+                alt="Lancaster Logo White"
+                class="h-auto w-full max-w-[250px]"
+              />
+            </div>
+            <div class="space-y-4">
+              <!-- Location -->
+              <div class="flex items-start">
+                <div class="mr-3 mt-1 shrink-0">
+                  <img
+                    loading="lazy"
+                    width="15"
+                    height="16"
+                    src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Global/location-pin%20(1).png"
+                    alt="Location Pin Icon"
+                  />
+                </div>
+                <span class="text-sm text-white">
+                  Suite 3201, High St., South Corporate Plaza Tower 2, 26th St.,
+                  Cor 11th Ave, BGC, Taguig City, Philippines 1634
+                </span>
+              </div>
+
+              <!-- Phone -->
+              <div class="flex items-center">
+                <div class="mr-3 shrink-0">
+                  <img
+                    loading="lazy"
+                    width="15"
+                    height="16"
+                    src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Global/phone-call.png"
+                    alt="Phone Call Icon"
+                  />
+                </div>
+                <span class="text-sm text-white">
+                  Trunkline: +(632)-8705-4050
+                </span>
+              </div>
+
+              <!-- Email -->
+              <div class="flex items-center">
+                <div class="mr-3 shrink-0">
+                  <img
+                    loading="lazy"
+                    width="15"
+                    height="16"
+                    src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Global/email%20(1).png"
+                    alt="Email Icon"
+                  />
+                </div>
+                <a
+                  href="mailto:info@lancastertechdev.com"
+                  class="text-sm text-white transition hover:underline"
+                >
+                  info@lancastertechdev.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Navigation & Services -->
+          <div class="space-y-8 md:col-span-3">
+            <!-- Company Links -->
+            <div>
+              <h3
+                class="mb-3 text-base font-bold uppercase tracking-wider text-white"
+              >
+                COMPANY
+              </h3>
+              <ul class="space-y-2 text-sm text-white">
+                <li>
+                  <a
+                    href="https://lancastertechdev.com/about-us"
+                    class="hover:underline"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://lancastertechdev.com/news"
+                    class="hover:underline"
+                    >News &amp; Updates</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://lancastertechdev.com/contact-us"
+                    class="hover:underline"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div>
+              <a
+                href="https://lancastertechdev.com/services"
+                class="mb-3 block text-base font-bold uppercase tracking-wider text-white hover:underline"
+              >
+                Services
+              </a>
+              <ul class="space-y-2 text-sm text-white">
+                <li>Artificial Intelligence</li>
+                <li>Cybersecurity</li>
+                <li>Digital Infrastructure</li>
+                <li>Integrated Audio-visual Technology</li>
+                <li>Managed Services</li>
+                <li>Systems Integration &amp; Architecture</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Column 3: Call to Action & Badges -->
+          <div
+            class="flex flex-col justify-between gap-8 md:col-span-6 md:flex-row"
+          >
+            <!-- Questions & Careers -->
+            <div class="space-y-6">
+              <div>
+                <h3
+                  class="mb-2 text-base font-bold uppercase tracking-wider text-white"
+                >
+                  HAVE A QUESTION?
+                </h3>
+                <p class="pr-4 text-sm text-white">
+                  Wherever you are on your journey, we can help. Let’s have a
+                  conversation.
+                </p>
+                <a
+                  href="https://lancastertechdev.com/contact-us"
+                  class="mt-2 inline-block font-bold text-yellow-400 hover:underline"
+                >
+                  Contact Us
+                </a>
+              </div>
+
+              <div>
+                <h3
+                  class="mb-2 text-base font-bold uppercase tracking-wider text-white"
+                >
+                  JOIN OUR TEAM
+                </h3>
+                <p class="pr-4 text-sm text-white">
+                  We’re building the best workplace in tech. And we’re doing it
+                  differently.
+                </p>
+                <a
+                  href="https://lancastertechdev.com/careers"
+                  class="mt-2 inline-block font-bold text-yellow-400 hover:underline"
+                >
+                  See Job Openings
+                </a>
+              </div>
+            </div>
+
+            <!-- Certification Logos -->
+            <div class="flex flex-col items-center justify-start space-y-4">
+              <div class="flex items-center space-x-4">
+                <img
+                  loading="lazy"
+                  width="118"
+                  height="199"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/DPO_DPS.png"
+                  alt="DPO DPS Certification Badge"
+                  class="h-auto max-w-[100px]"
+                />
+                <img
+                  loading="lazy"
+                  width="281"
+                  height="199"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/Certificate.png"
+                  alt="Company Certificate"
+                  class="h-auto max-w-[180px]"
+                />
+              </div>
+              <div>
+                <img
+                  loading="lazy"
+                  width="337"
+                  height="173"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/UROS%20LOGO.png"
+                  alt="UROS Logo"
+                  class="h-auto max-w-[200px]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="bg-[#5c0000] py-4">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <!-- Desktop Layout -->
+          <div class="hidden items-center justify-between md:flex">
+            <a href="/privacy-policy" class="text-sm text-white hover:underline"
+              >Privacy Policy</a
+            >
+            <p class="text-sm text-white">
+              © Lancaster Technology and Development Corporation
+            </p>
+            <div class="flex items-center space-x-4">
+              <a
+                href="https://www.facebook.com/LancasterTechnologyandDevelopmentCorporation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
+              >
+                <img
+                  loading="lazy"
+                  width="32"
+                  height="32"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/001-facebook%20(2)%201.png"
+                  alt="Facebook"
+                  class="h-8 w-8"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/lancastertechdevphilsinc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our LinkedIn page"
+              >
+                <img
+                  loading="lazy"
+                  width="32"
+                  height="32"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/003-linkedin%201.png"
+                  alt="LinkedIn"
+                  class="h-8 w-8"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Mobile Layout -->
+          <div class="flex flex-col space-y-4 text-center md:hidden">
+            <div class="flex justify-center space-x-4">
+              <a
+                href="https://www.facebook.com/LancasterTechnologyandDevelopmentCorporation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
+              >
+                <img
+                  loading="lazy"
+                  width="32"
+                  height="32"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/001-facebook%20(2)%201.png"
+                  alt="Facebook"
+                  class="h-8 w-8"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/lancastertechdevphilsinc"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our LinkedIn page"
+              >
+                <img
+                  loading="lazy"
+                  width="32"
+                  height="32"
+                  src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Footer/003-linkedin%201.png"
+                  alt="LinkedIn"
+                  class="h-8 w-8"
+                />
+              </a>
+            </div>
+            <a href="/privacy-policy" class="text-sm text-white hover:underline"
+              >Privacy Policy</a
+            >
+            <p class="text-sm text-white">
+              © Lancaster Technology and Development Corporation
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
