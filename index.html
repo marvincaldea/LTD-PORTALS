@@ -66,7 +66,7 @@
               <li>
                 <a
                   href="https://portal.rsu.edu.ph/public/faq"
-                  class="text-lg font-normal transition text-emerald-800 hover:text-emerald-200"
+                  class="text-lg font-normal transition text-emerald-800 hover:text-emerald-500"
                   id="about-id-desktop"
                 >
                   FAQs
@@ -79,18 +79,11 @@
           <div class="flex md:hidden">
             <button
               type="button"
-              class="inline-flex items-center justify-center p-2 text-gray-700 hover:text-black focus:outline-none"
+              class="inline-flex items-center justify-center p-2 text-emerald-900 hover:text-emerald-700 focus:outline-none text-2xl"
               id="menu-toggle-mob"
               aria-label="Open Mobile Menu"
             >
-              <img
-                loading="lazy"
-                width="27"
-                height="7"
-                src="https://portal.rsu.edu.ph/assets/images/rsulogo2.png"
-                alt="Menu Toggle Icon"
-                class="h-auto w-7"
-              />
+              <i class="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
@@ -98,7 +91,7 @@
 
       <!-- Mobile Modal Overlay Menu -->
       <div
-        class="fixed inset-0 z-50 hidden bg-[#800000] p-6 text-white"
+        class="fixed inset-0 z-50 hidden bg-emerald-900 p-6 text-white"
         id="menu-modal"
       >
         <div class="mx-auto flex max-w-7xl items-center justify-between">
@@ -106,81 +99,64 @@
           <a href="https://portal.rsu.edu.ph/public/">
             <img
               loading="lazy"
-              src="https://lancastertechdev.com/wp-content/uploads/2026/07/new_logo_white.png"
+              src="https://portal.rsu.edu.ph/assets/images/rsulogo2.png"
               alt="RSU Logo White"
-              class="h-10 w-auto"
+              class="h-10 w-auto brightness-0 invert"
             />
           </a>
           <!-- Close Mobile Menu Button -->
           <button
             type="button"
-            class="p-2 text-white focus:outline-none"
+            class="p-2 text-white hover:text-gray-300 focus:outline-none text-2xl"
             id="close-btn-mob"
             aria-label="Close Mobile Menu"
           >
-            <img
-              loading="lazy"
-              width="20"
-              height="20"
-              src="https://lancastertechdev.com/wp-content/themes/Lancaster%20Technology%20and%20Development/images/custom/Header/close (7) 1.png"
-              alt="Close Menu Icon"
-              class="h-5 w-5"
-            />
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
         <!-- Mobile Navigation Links -->
         <div class="mt-12">
-          <ul class="flex flex-col space-y-6">
+          <ul class="flex flex-col space-y-4">
             <li>
               <a
-                href="https://lancastertechdev.com"
-                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                href="https://portal.rsu.edu.ph/public/announcements"
+                class="text-2xl font-normal text-white transition hover:text-emerald-200"
                 id="home-id-mobile"
               >
-                Home
+                ANNOUNCEMENTS
               </a>
             </li>
             <li>
               <a
-                href="https://lancastertechdev.com/about-us"
-                class="text-2xl font-normal text-white transition hover:text-gray-200"
+                href="https://portal.rsu.edu.ph/public/faqs"
+                class="text-2xl font-normal text-white transition hover:text-emerald-200"
                 id="about-id-mobile"
               >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://lancastertechdev.com/services"
-                class="text-2xl font-normal text-white transition hover:text-gray-200"
-                id="services-id-mobile"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://lancastertechdev.com/news"
-                class="text-2xl font-normal text-white transition hover:text-gray-200"
-                id="news-id-mobile"
-              >
-                News &amp; Updates
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://lancastertechdev.com/contact-us"
-                class="text-2xl font-normal text-white transition hover:text-gray-200"
-                id="contact-id-mobile"
-              >
-                Contact Us
+                FAQs
               </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- JavaScript to handle opening and closing -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle-mob");
+      const closeBtn = document.getElementById("close-btn-mob");
+      const menuModal = document.getElementById("menu-modal");
+
+      toggleBtn.addEventListener("click", () => {
+        menuModal.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menuModal.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+      });
+    </script>
 
     <main
       id="main-content"
@@ -501,15 +477,49 @@
           <div
             class="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-400 text-[10px] font-semibold uppercase tracking-wider"
           >
-            <a href="https://rsu.edu.ph/campus?slug=main-campus" class="hover:text-white transition">Odiongan (Main)</a>
-            <a href="https://rsu.edu.ph/campus?slug=romblon-campus" class="hover:text-white transition">Romblon</a>
-            <a href="https://rsu.edu.ph/campus?slug=san-agustin-campus" class="hover:text-white transition">San Agustin</a>
-            <a href="https://rsu.edu.ph/campus?slug=cajidiocan-campus" class="hover:text-white transition">Cajidiocan</a>
-            <a href="https://rsu.edu.ph/campus?slug=san-fernando-campus" class="hover:text-white transition">San Fernando</a>
-            <a href="https://rsu.edu.ph/campus?slug=san-andres-campus" class="hover:text-white transition">San Andres</a>
-            <a href="https://rsu.edu.ph/campus?slug=sta-maria-campus" class="hover:text-white transition">Sta. Maria</a>
-            <a href="https://rsu.edu.ph/campus?slug=sta-fe-campus" class="hover:text-white transition">Sta. Fe</a>
-            <a href="https://rsu.edu.ph/campus?slug=calatrava-campus" class="hover:text-white transition col-span-2"
+            <a
+              href="https://rsu.edu.ph/campus?slug=main-campus"
+              class="hover:text-white transition"
+              >Odiongan (Main)</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=romblon-campus"
+              class="hover:text-white transition"
+              >Romblon</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=san-agustin-campus"
+              class="hover:text-white transition"
+              >San Agustin</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=cajidiocan-campus"
+              class="hover:text-white transition"
+              >Cajidiocan</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=san-fernando-campus"
+              class="hover:text-white transition"
+              >San Fernando</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=san-andres-campus"
+              class="hover:text-white transition"
+              >San Andres</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=sta-maria-campus"
+              class="hover:text-white transition"
+              >Sta. Maria</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=sta-fe-campus"
+              class="hover:text-white transition"
+              >Sta. Fe</a
+            >
+            <a
+              href="https://rsu.edu.ph/campus?slug=calatrava-campus"
+              class="hover:text-white transition col-span-2"
               >Calatrava</a
             >
           </div>
